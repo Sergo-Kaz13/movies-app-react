@@ -1,70 +1,16 @@
-# Getting Started with Create React App
+# Описание
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Создайте картотеку пользователей, в которую можно добавлять новых пользователей и удалять существующих. Программа должна быть представлена в виде области, в которой находятся два поля для ввода данных ("имя" и "фамилия"), рядом с которыми находится кнопка "Добавить". Под этой областью находятся карточки уже созданных пользователей. Карточка пользователя должна содержать "порядкой номер" (например, #1), "имя", "фамилию", "секретный номер", кнопку "Показать секретный номер" и кнопку "Удалить".
 
-## Available Scripts
+# Детали
 
-In the project directory, you can run:
+Поля для ввода "имени" и "фамилии", а также кнопка "Добавить" должны быть всегда видны на странице. По нажатию на кнопку "Добавить", новая карточка, с введенными данными пользователя, должна появиться на странице. Если при нажатии на кнопку "Добавить", "имя" или "фамилия" не были введены, то должно появиться сообщение "Имя и фамилия обязательны к заполнению", а карточка пользователя не должна быть создана. Если после этого все поля были заполнены (и сообщение об ошибке отображается на странице), а кнопка "Добавить" была повторно нажата, сообщение об ошибке должно быть удалено, а карточка должна быть успешно создана. При создании карточки, сгенерируйте для пользователя случайный "секретный номер", каждый символ которого должен быть зашифрован в виде \* (например, "секретный номер" равен 0762452482, а отображаться он должен как ****\*\*****). По нажатию на кнопку "Показать секретный номер", "секретный номер" должен стать видимым (т.е. отображается как 0762452482), а текст кнопки "Показать скрытый номер" должен смениться на "Скрыть секретный номер". По нажатию на кнопку "Удалить", карточка пользователя должна быть удалена. Созданные карточки пользователей не должны храниться ни в какой Базе Данных или подобных хранилищах, т.е. при перезагрузке страницы, они должны быть удалены.
 
-### `yarn start`
+# Задачи
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Реализовать описанный функционал
+2. Стилизовать программу на своё усмотрение
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Дополнительная информация
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Прежде чем начать работать в папке с заданием, выполните команду `yarn` или `npm i` в терминале и дождитесь пока все необходимые пакеты будут установлены. После этого выполните команду `yarn start` или `npm start`, чтобы запустить локальный сервер.
