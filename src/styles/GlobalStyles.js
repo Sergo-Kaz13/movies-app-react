@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyle = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
     * {
         margin: 0;
         padding: 0;
@@ -15,9 +15,9 @@ export const GlobalStyle = createGlobalStyle`
     input,
     textarea,
     button {
-        font-size: 1.6rem;
+        font-size: ${props => props.theme.defaultFontSize};
         font-weight: 500;
-        font-family: ${fontFamily};
+        font-family: ${props => props.theme.defaultFontFamily};
     }
 
     button {

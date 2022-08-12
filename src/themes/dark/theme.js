@@ -1,5 +1,8 @@
 import * as commonVariables from '../variables';
 
 export const theme = {
-    defaultFontSize: commonVariables.fontSize.md
+    defaultFontFamily: commonVariables.fontFamily,
+    defaultFontSize: commonVariables.fontSize.md,
+    bgColor: 'darkblue',
+    color: '#fff'
 };

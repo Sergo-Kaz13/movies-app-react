@@ -1,11 +1,17 @@
+import { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import { Layout } from './components';
-import { GlobalStyle } from './styles';
+import { GlobalStyles } from './styles';
+import { darkTheme, lightTheme } from './themes';
 
-export const App = () => (
-    <ThemeProvider theme={{}}>
-        <GlobalStyle />
-        <Layout>Content</Layout>
-    </ThemeProvider>
-);
+export const App = () => {
+    const [theme, setTheme] = useState(darkTheme);
+
+    return (
+        <ThemeProvider theme={theme}>
+            <GlobalStyles />
+            <Layout>Content</Layout>
+        </ThemeProvider>
+    );
+};
