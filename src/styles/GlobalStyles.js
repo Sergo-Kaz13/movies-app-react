@@ -9,6 +9,11 @@ export const GlobalStyles = createGlobalStyle`
 
     html {
         font-size: 62.5%; // 10px => 1rem
+        height: 100%;
+    }
+
+    body {
+        height: 100%;
     }
 
     body,
@@ -22,5 +27,9 @@ export const GlobalStyles = createGlobalStyle`
 
     button {
         cursor: pointer;
+    }
+
+    #root {
+        height: 100%;
     }
 `;
