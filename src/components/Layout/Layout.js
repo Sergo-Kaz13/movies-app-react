@@ -17,7 +17,7 @@ export const Layout = ({ children }) => (
     </StyledLayout>
 );
 
-Layout.protoTypes = {
+Layout.propTypes = {
     /**
      * Page representation
      */
