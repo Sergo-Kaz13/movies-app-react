@@ -1,11 +1,12 @@
 import { Input } from '../Input';
+import { Button } from '../Button';
 import { StyledWidthLimiter } from '../../styles';
-import { StyledHeader, StyledInputWrapper } from './styles';
+import { StyledHeader, StyledInputWrapper, StyledSearch } from './styles';
 
 export const Header = () => (
     <StyledHeader>
         <StyledWidthLimiter>
-            <div>
+            <StyledSearch>
                 <StyledInputWrapper>
                     <Input
                         type="text"
@@ -13,7 +14,9 @@ export const Header = () => (
                         placeholder="Search movies"
                     />
                 </StyledInputWrapper>
-            </div>
+
+                <Button>Search</Button>
+            </StyledSearch>
         </StyledWidthLimiter>
     </StyledHeader>
 );

@@ -22,7 +22,14 @@ export const margin = {
     lg: '2.5rem',
     xl: '3rem'
 };
+export const lightColors = {
+    500: '#fff'
+};
+export const darkColors = {
+    900: '#121212'
+};
 
 //Defaults
 export const defaultFontFamily = fontFamily;
 export const defaultFontSize = fontSize.md;
+export const defaultColor = darkColors[900];
