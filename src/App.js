@@ -15,7 +15,9 @@ export const App = () => (
                     <span>Movies list:</span>
 
                     {movies.map(movie => (
-                        <div key={movie.id}>Movie ID: {movie.id}</div>
+                        <div key={movie.id}>
+                            <pre>{JSON.stringify(movie, null, 4)}</pre>
+                        </div>
                     ))}
                 </Layout>
             )}
