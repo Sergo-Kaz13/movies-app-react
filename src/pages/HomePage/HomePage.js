@@ -1,5 +1,6 @@
 import PT from 'prop-types';
 
+import { Link } from '../../components';
 import { StyledWrapper, StyledCard } from './styles';
 
 const { REACT_APP_STORAGE_URL } = process.env;
@@ -11,8 +12,7 @@ export const HomePage = ({ movies }) => (
 
             return (
                 <StyledCard key={id} $imageUrl={imageUrl}>
-                    <h1>{original_title}</h1>
-                    {/* <img src={poster_path} alt={original_title} /> */}
+                    <Link href="/">{original_title}</Link>
                 </StyledCard>
             );
         })}

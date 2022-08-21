@@ -1,5 +1,7 @@
 import styled from 'styled-components/macro';
 
+import { StyledLink } from '../../../components/Link';
+
 const maxWidth = '50rem';
 const borderRadius = '0.5rem';
 
@@ -24,5 +26,11 @@ export const StyledCard = styled.div`
     &:hover::before {
         background-color: ${props => props.theme.darkColors[800]};
         cursor: pointer;
+    }
+
+    ${StyledLink} {
+        color: ${props => props.theme.lightColors[500]};
+        opacity: 0;
+        transition: opacity 300ms ease;
     }
 `;
