@@ -28,6 +28,8 @@ export const Header = ({
                     {isSearching ? 'Searching' : 'Search'}
                 </Button>
             </StyledSearch>
+
+            <NavBar />
         </StyledWidthLimiter>
     </StyledHeader>
 );
