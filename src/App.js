@@ -1,5 +1,5 @@
 import { ThemeProvider } from 'styled-components';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { Layout } from './components';
 import { LayoutContainer } from './containers';
@@ -20,12 +20,19 @@ export const App = () => (
                 {({ movies, ...other }) => (
                     <Layout {...other}>
                         <Routes>
+                            {['/favorite', '/profile', '/logout'].map(
+                                (path, i) => (
+                                    <Route
+                                        path={path}
+                                        element={<FakePage />}
+                                        key={i}
+                                    />
+                                )
+                            )}
                             <Route
                                 path="/"
                                 element={<HomePage movies={movies} />}
                             ></Route>
-
-                            <Route path="/fake" element={<FakePage />}></Route>
                         </Routes>
                     </Layout>
                 )}

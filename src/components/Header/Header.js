@@ -2,8 +2,13 @@ import PT from 'prop-types';
 
 import { Input } from '../Input';
 import { Button } from '../Button';
-import { StyledWidthLimiter } from '../../styles';
-import { StyledHeader, StyledInputWrapper, StyledSearch } from './styles';
+import { NavBar } from '../NavBar';
+import {
+    StyledHeader,
+    StyledInputWrapper,
+    StyledSearch,
+    StyledHeaderWidthLimiter
+} from './styles';
 
 export const Header = ({
     search,
@@ -12,7 +17,7 @@ export const Header = ({
     onSearchMovies
 }) => (
     <StyledHeader>
-        <StyledWidthLimiter>
+        <StyledHeaderWidthLimiter>
             <StyledSearch>
                 <StyledInputWrapper>
                     <Input
@@ -30,7 +35,7 @@ export const Header = ({
             </StyledSearch>
 
             <NavBar />
-        </StyledWidthLimiter>
+        </StyledHeaderWidthLimiter>
     </StyledHeader>
 );
 
