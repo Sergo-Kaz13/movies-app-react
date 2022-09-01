@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { Layout } from './components';
 import { LayoutContainer } from './containers';
-import { HomePage } from './pages';
+import { HomePage, MovieDetailsPage } from './pages';
 import { GlobalStyles } from './styles';
 import { darkTheme } from './themes';
 
@@ -29,6 +29,12 @@ export const App = () => (
                                     />
                                 )
                             )}
+
+                            <Route
+                                path="/movie/:movieId"
+                                element={<MovieDetailsPage movie={movies} />}
+                            ></Route>
+
                             <Route
                                 path="/"
                                 element={<HomePage movies={movies} />}
